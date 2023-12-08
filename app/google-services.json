@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909195522621",
+    "project_id": "teste-firebase-496a3",
+    "storage_bucket": "teste-firebase-496a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909195522621:android:6f8d3979325e803149f054",
+        "android_client_info": {
+          "package_name": "com.example.appfood_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIaR0DuvgJCeFS7TgJgE4LdwBiVcs9JPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

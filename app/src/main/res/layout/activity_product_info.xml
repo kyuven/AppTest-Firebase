@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_nameFoodClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adadada"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageFood_desc"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/missoshiru"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nameFoodClose" />
+
+            <LinearLayout
+                android:id="@+id/foodInfo"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageFood_desc"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/ratingDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:text="Rating:"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/star_foodDesc"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/baseline_star_rate_24" />
+
+                <TextView
+                    android:id="@+id/txt_ratingDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="4.3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:text="R$:"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="14.00"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_descriptionFood"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:text="adadada"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/foodInfo"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/btn_addToCart"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/black"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_descriptionFood"
+                android:layout_marginTop="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

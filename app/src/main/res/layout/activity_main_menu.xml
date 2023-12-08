@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baby_green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/button"
+            app:shapeAppearanceOverlay="@style/circular"/>
+
+    </LinearLayout>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/light_green"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_green"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_01"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/sushi"
+                        app:shapeAppearanceOverlay="@style/circular"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sushi"
+                        android:textColor="@color/dark_green"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_01" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_02"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/yakitori"
+                        app:shapeAppearanceOverlay="@style/circular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yakitori"
+                        android:textColor="@color/dark_green"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_02" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_03"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/sashimi"
+                        app:shapeAppearanceOverlay="@style/circular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sashimi"
+                        android:textColor="@color/dark_green"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_03" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_04"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/tempura"
+                        app:shapeAppearanceOverlay="@style/circular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempura"
+                        android:textColor="@color/dark_green"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_04" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_05"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/yakisoba"
+                        app:shapeAppearanceOverlay="@style/circular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yakisoba"
+                        android:textColor="@color/dark_green"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_05" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_itens"
+        android:layout_width="320dp"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

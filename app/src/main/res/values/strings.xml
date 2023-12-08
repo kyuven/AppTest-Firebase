@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="hint_name">Type your name:</string>
+    <string name="hint_email">Type your email:</string>
+    <string name="hint_password">Type your password:</string>
+    <string name="hint_confirm_password">Confirm your password:</string>
+    <string name="apresentation">Order online delicious sushi delivered straight to your door!</string>
+    <string name="fab">FAB register</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello">Hello,\nBe welcome!</string>
+    <string name="register_link"><u>Are you new? register now</u></string>
+    <string name="login_link"><u>Have an account? SignIn</u></string>
+    <string name="logout_link"><u>LogOut</u></string>
+</resources>
